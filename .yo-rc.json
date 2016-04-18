@@ -1,0 +1,21 @@
+{
+  "generator-jhipster": {
+    "jhipsterVersion": "3.0.0",
+    "baseName": "inventario",
+    "packageName": "org.gerald.inventario",
+    "packageFolder": "org/gerald/inventario",
+    "serverPort": "8080",
+    "authenticationType": "session",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "no",
+    "buildTool": "maven",
+    "enableSocialSignIn": false,
+    "rememberMeKey": "4f009494e560488ae6f855c4132c5844a93d24b2",
+    "enableTranslation": false
+  }
+}

@@ -1,0 +1,15 @@
+version: '2'
+services:
+    inventario-app:
+        image: inventario
+        external_links:
+            - inventario-mysql:mysql
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod
+            - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/inventario?useUnicode=true&characterEncoding=utf8&useSSL=false
+        ports:
+            - 8080:8080
+    inventario-mysql:
+        extends:
+            file: mysql.yml
+            service: inventario-mysql
