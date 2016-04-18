@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_O38k8AAvEeaXMru53YN6lQ" name="NewModel">
+  <packageImport xmi:id="_M99SkAAxEeaXMru53YN6lQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_N7WH4AAxEeaXMru53YN6lQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xWm1cAWpEeai6c993RsHDg" name="Rol">
+    <ownedAttribute xmi:id="_d8fwsAWqEeai6c993RsHDg" name="nombre">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_gBj_wAWqEeai6c993RsHDg" name="descripcion">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_nqWWEAWqEeai6c993RsHDg" name="Permiso">
+    <ownedAttribute xmi:id="_oqPFwAWqEeai6c993RsHDg" name="ver">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_r9m7AAWqEeai6c993RsHDg" name="crear">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_uC_TIAWqEeai6c993RsHDg" name="modificar">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wRw30AWqEeai6c993RsHDg" name="autorizar">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5Z0BcAWqEeai6c993RsHDg" name="Usuario">
+    <ownedAttribute xmi:id="_67WssAWqEeai6c993RsHDg" name="login">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9hMGgAWqEeai6c993RsHDg" name="password">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="__b6t0AWqEeai6c993RsHDg" name="estado">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_DaT2AAWrEeai6c993RsHDg" name="Formulario">
+    <ownedAttribute xmi:id="_Em0scAWrEeai6c993RsHDg" name="nombre">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_GgZdMAWrEeai6c993RsHDg" name="descripcion">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hmfgwAWrEeai6c993RsHDg" name="tiene" memberEnd="_hmfgwQWrEeai6c993RsHDg _hmfgxAWrEeai6c993RsHDg" navigableOwnedEnd="_hmfgxAWrEeai6c993RsHDg">
+    <ownedEnd xmi:id="_hmfgwQWrEeai6c993RsHDg" name="usuario" type="_5Z0BcAWqEeai6c993RsHDg" aggregation="composite" association="_hmfgwAWrEeai6c993RsHDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hmfgwgWrEeai6c993RsHDg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hmfgwwWrEeai6c993RsHDg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_hmfgxAWrEeai6c993RsHDg" name="permisos" type="_nqWWEAWqEeai6c993RsHDg" aggregation="composite" association="_hmfgwAWrEeai6c993RsHDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hmfgxQWrEeai6c993RsHDg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hmfgxgWrEeai6c993RsHDg" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_TOUr4AWsEeai6c993RsHDg" name="tiene" memberEnd="_TOUr4QWsEeai6c993RsHDg _TOUr5AWsEeai6c993RsHDg" navigableOwnedEnd="_TOUr5AWsEeai6c993RsHDg">
+    <ownedEnd xmi:id="_TOUr4QWsEeai6c993RsHDg" name="permisos" type="_nqWWEAWqEeai6c993RsHDg" aggregation="composite" association="_TOUr4AWsEeai6c993RsHDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOUr4gWsEeai6c993RsHDg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOUr4wWsEeai6c993RsHDg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_TOUr5AWsEeai6c993RsHDg" name="formularios" type="_DaT2AAWrEeai6c993RsHDg" aggregation="composite" association="_TOUr4AWsEeai6c993RsHDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TOUr5QWsEeai6c993RsHDg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TOUr5gWsEeai6c993RsHDg" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7iJ_QAWwEeai6c993RsHDg" name="tiene" memberEnd="_7iJ_QQWwEeai6c993RsHDg _7iJ_RAWwEeai6c993RsHDg" navigableOwnedEnd="_7iJ_RAWwEeai6c993RsHDg">
+    <ownedEnd xmi:id="_7iJ_QQWwEeai6c993RsHDg" name="rols" type="_xWm1cAWpEeai6c993RsHDg" aggregation="composite" association="_7iJ_QAWwEeai6c993RsHDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iJ_QgWwEeai6c993RsHDg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iJ_QwWwEeai6c993RsHDg" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_7iJ_RAWwEeai6c993RsHDg" name="permisos" type="_nqWWEAWqEeai6c993RsHDg" aggregation="composite" association="_7iJ_QAWwEeai6c993RsHDg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iJ_RQWwEeai6c993RsHDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iJ_RgWwEeai6c993RsHDg" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

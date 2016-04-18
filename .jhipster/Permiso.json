@@ -1,0 +1,54 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipType": "one-to-one",
+      "relationshipName": "formularios",
+      "otherEntityName": "formulario",
+      "otherEntityField": "id",
+      "ownerSide": true,
+      "otherEntityRelationshipName": "permisos"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipType": "many-to-one",
+      "relationshipName": "usuario",
+      "otherEntityName": "usuario",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipId": 3,
+      "relationshipType": "many-to-one",
+      "relationshipName": "rols",
+      "otherEntityName": "rol",
+      "otherEntityField": "id"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "ver",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "crear",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "modificar",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "autorizar",
+      "fieldType": "Boolean"
+    }
+  ],
+  "changelogDate": "20160418220105",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "entityTableName": "permiso"
+}

@@ -1,0 +1,41 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipType": "one-to-many",
+            "relationshipName": "permisos",
+            "otherEntityName": "permiso",
+            "otherEntityRelationshipName": "usuario"
+        },
+        {
+            "relationshipName": "empleado",
+            "otherEntityName": "empleado",
+            "relationshipType": "one-to-one",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "usuario"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "login",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "password",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "estado",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160418220106",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "usuario",
+    "pagination": "no"
+}

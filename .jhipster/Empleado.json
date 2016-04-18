@@ -1,0 +1,57 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "usuario",
+            "otherEntityName": "usuario",
+            "relationshipType": "one-to-one",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "empleado"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "nombre",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "apellidoPaterno",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "apellidoMaterno",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sexo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nacionalidad",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "profesion",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fechaAlta",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "fechaBaja",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "ci",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20160418214940",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "empleado",
+    "pagination": "no"
+}
