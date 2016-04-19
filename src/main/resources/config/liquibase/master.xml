@@ -10,5 +10,15 @@
     <include file="classpath:config/liquibase/changelog/20160418220106_added_entity_Usuario.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20160418220107_added_entity_Formulario.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20160418220105_added_entity_Permiso.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160419210520_added_entity_EntidadPublica.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160419210521_added_entity_Proyecto.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160419210522_added_entity_Documento.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160419210523_added_entity_FlujoCompra.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160419210524_added_entity_SolicitudCompra.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160419210525_added_entity_LinSolicitud.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160419210526_added_entity_Material.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160419210527_added_entity_Pedido.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160419210528_added_entity_LinPedido.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20160419210529_added_entity_FlujoPedido.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
 </databaseChangeLog>

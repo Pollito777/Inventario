@@ -1,0 +1,61 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "proyecto",
+            "otherEntityName": "proyecto",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "solicitudCompra",
+            "otherEntityName": "solicitudCompra",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "pedido"
+        },
+        {
+            "relationshipName": "linPedido",
+            "otherEntityName": "linPedido",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "pedido"
+        },
+        {
+            "relationshipName": "flujoPedido",
+            "otherEntityName": "flujoPedido",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "numeroPedido",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "justificacion",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "autorizaId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "fechaPedido",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "fechaAutoriza",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20160419210527",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "pedido",
+    "pagination": "no"
+}

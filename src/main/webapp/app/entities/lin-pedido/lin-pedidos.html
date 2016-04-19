@@ -1,0 +1,60 @@
+<div>
+    <h2>LinPedidos</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="lin-pedido.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new LinPedido
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>CantidadPedido</span></th>
+                    <th><span>CantidadAutorizada</span></th>
+                    <th><span>CantidadDespachada</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="linPedido in vm.linPedidos track by linPedido.id">
+                    <td><a ui-sref="lin-pedido-detail({id:linPedido.id})">{{linPedido.id}}</a></td>
+                    <td>{{linPedido.cantidadPedido}}</td>
+                    <td>{{linPedido.cantidadAutorizada}}</td>
+                    <td>{{linPedido.cantidadDespachada}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="lin-pedido-detail({id:linPedido.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="lin-pedido.edit({id:linPedido.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="lin-pedido.delete({id:linPedido.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

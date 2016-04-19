@@ -1,0 +1,33 @@
+
+<div>
+    <h2><span>SolicitudCompra</span> {{vm.solicitudCompra.id}}</h2>
+    <hr>
+    <dl class="dl-horizontal">
+        <dt><span>NumeroSolicitud</dt></dt>
+        <dd>
+            <span>{{vm.solicitudCompra.numeroSolicitud}}<span>
+        </dd>
+        <hr>
+        <dt><span>Justificacion</dt></dt>
+        <dd>
+            <span>{{vm.solicitudCompra.justificacion}}<span>
+        </dd>
+        <hr>
+        <dt><span>AutorizaId</dt></dt>
+        <dd>
+            <span>{{vm.solicitudCompra.autorizaId}}<span>
+        </dd>
+        <hr>
+        <dt><span>OrdenId</dt></dt>
+        <dd>
+            <span>{{vm.solicitudCompra.ordenId}}<span>
+        </dd>
+        <hr>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+</div>

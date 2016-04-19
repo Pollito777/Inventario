@@ -1,0 +1,64 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "flujoCompra",
+            "otherEntityName": "flujoCompra",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "linSolicitud",
+            "otherEntityName": "linSolicitud",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "solicitudCompra"
+        },
+        {
+            "relationshipName": "pedido",
+            "otherEntityName": "pedido",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "numeroSolicitud",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "justificacion",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "autorizaId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "ordenId",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "fechaSolicitud",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "fechaAutoriza",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "fechaOrden",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20160419210524",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "solicitud_compra",
+    "pagination": "no"
+}

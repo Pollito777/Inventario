@@ -1,0 +1,62 @@
+<div>
+    <h2>SolicitudCompras</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="solicitud-compra.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new SolicitudCompra
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>NumeroSolicitud</span></th>
+                    <th><span>Justificacion</span></th>
+                    <th><span>AutorizaId</span></th>
+                    <th><span>OrdenId</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="solicitudCompra in vm.solicitudCompras track by solicitudCompra.id">
+                    <td><a ui-sref="solicitud-compra-detail({id:solicitudCompra.id})">{{solicitudCompra.id}}</a></td>
+                    <td>{{solicitudCompra.numeroSolicitud}}</td>
+                    <td>{{solicitudCompra.justificacion}}</td>
+                    <td>{{solicitudCompra.autorizaId}}</td>
+                    <td>{{solicitudCompra.ordenId}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="solicitud-compra-detail({id:solicitudCompra.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="solicitud-compra.edit({id:solicitudCompra.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="solicitud-compra.delete({id:solicitudCompra.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

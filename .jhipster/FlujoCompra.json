@@ -1,0 +1,15 @@
+{
+  "relationships": [],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "estado",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160419210523",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "entityTableName": "flujo_compra"
+}

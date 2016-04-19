@@ -1,0 +1,40 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "codigo",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "descripcion",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "codigoFabrica",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fechaAlta",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "fechaBaja",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "fechaModificar",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20160419210526",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "material",
+    "pagination": "no"
+}

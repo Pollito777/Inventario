@@ -1,0 +1,60 @@
+<div>
+    <h2>EntidadPublicas</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="entidad-publica.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new EntidadPublica
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span>ID</span></th>
+                    <th><span>Nombre</span></th>
+                    <th><span>Direccion</span></th>
+                    <th><span>Tipo</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="entidadPublica in vm.entidadPublicas track by entidadPublica.id">
+                    <td><a ui-sref="entidad-publica-detail({id:entidadPublica.id})">{{entidadPublica.id}}</a></td>
+                    <td>{{entidadPublica.nombre}}</td>
+                    <td>{{entidadPublica.direccion}}</td>
+                    <td>{{entidadPublica.tipo}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="entidad-publica-detail({id:entidadPublica.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="entidad-publica.edit({id:entidadPublica.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="entidad-publica.delete({id:entidadPublica.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

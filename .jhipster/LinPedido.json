@@ -1,0 +1,38 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "pedido",
+            "otherEntityName": "pedido",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "material",
+            "otherEntityName": "material",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "cantidadPedido",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "cantidadAutorizada",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "cantidadDespachada",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20160419210528",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "lin_pedido",
+    "pagination": "no"
+}

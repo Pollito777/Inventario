@@ -1,0 +1,44 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "entidadPublica",
+            "otherEntityName": "entidadPublica",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "documento",
+            "otherEntityName": "documento",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "proyecto"
+        },
+        {
+            "relationshipName": "pedido",
+            "otherEntityName": "pedido",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "proyecto"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nombre",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "noControl",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "modalidad",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160419210521",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "proyecto",
+    "pagination": "no"
+}

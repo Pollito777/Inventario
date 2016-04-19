@@ -1,0 +1,32 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "proyecto",
+            "otherEntityName": "proyecto",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "entidadPublica"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nombre",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "direccion",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "tipo",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160419210520",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "entidad_publica",
+    "pagination": "no"
+}

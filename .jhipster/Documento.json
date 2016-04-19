@@ -1,0 +1,32 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "proyecto",
+            "otherEntityName": "proyecto",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "uRi",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "tipo",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "descripcion",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160419210522",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "documento",
+    "pagination": "no"
+}

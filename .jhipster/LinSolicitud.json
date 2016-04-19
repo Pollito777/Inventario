@@ -1,0 +1,45 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "solicitudCompra",
+            "otherEntityName": "solicitudCompra",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "material",
+            "otherEntityName": "material",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "cantidadSolicitada",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "cantidadAutorizada",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "cantidadComprada",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "precioUnitario",
+            "fieldType": "Float",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20160419210525",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "lin_solicitud",
+    "pagination": "no"
+}
